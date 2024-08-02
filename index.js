@@ -14,7 +14,6 @@ app.use((req,res,next)=>{
 })
 app.use((req,res,next)=>{
     console.log('Hi , I am middleware2!');
-    res.send('<h1>Middleware 2</h1>')
     next()
 })
 app.get('/', (req, res) => {
